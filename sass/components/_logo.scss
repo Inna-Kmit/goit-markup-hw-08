@@ -1,0 +1,33 @@
+/*--header and footer Logo--*/
+
+.logo {
+  @include font(26, 1.19, 700, 0.03em);
+  // font-weight: 700;
+  // font-size: 26px;
+  // line-height: 1.19;
+  // letter-spacing: 0.03em;
+  display: inline-block;
+  text-decoration: none;
+  font-family: 'Raleway', sans-serif;
+  color: var(--black-color);
+  margin-right: 94px;
+}
+.logo__name {
+  color: var(--accent-color);
+}
+
+.footer__logo--color {
+  @include font(26, 1.19, 700, 0.03em);
+  // font-weight: 700;
+  // font-size: 26px;
+  // line-height: 1.19;
+  // letter-spacing: 0.03em;
+  display: block;
+  font-family: 'Raleway', sans-serif;
+  text-decoration: none;
+  color: var(--background-color);
+  margin-bottom: 20px;
+}
+/*.logo__name {
+  color: var(--accent-color);
+}*/
