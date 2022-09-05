@@ -1,9 +1,20 @@
 .features {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
 }
-.features__item:not(:last-child) {
-  margin-right: 30px;
+.features__item {
+  width: 100%;
+
+  @media screen and (min-width: 780px) {
+    width: calc((100% - 30px) / 2);
+  }
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 90px) / 4);
+  }
 }
+
 /*.features-list-item.icon-vector::before {
   display: block;
   content: '';
@@ -25,6 +36,12 @@
   width: 270px;
   height: 120px;
   margin-bottom: 30px;
+  @media screen and (min-width: 780px) {
+    max-width: 354px;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 270px;
+  }
 }
 
 .features__title {
@@ -36,6 +53,13 @@
   text-transform: uppercase;
   color: var(--primary-text-color);
   margin-bottom: 10px;
+
+  @media screen and (min-width: 780px) {
+    text-align: left;
+  }
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }
 .features__text {
   @include font(14, 1.71, null, 0.03em);

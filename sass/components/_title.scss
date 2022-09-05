@@ -1,9 +1,12 @@
 .title {
-  @include font(36, 1.17, 700, 0.03em);
+  @include font(28, 1.17, 700, 0.03em);
   // font-weight: 700;
   // font-size: 36px;
   // line-height: 1.17;*/
   /*letter-spacing: 0.03em;*/
   color: var(#212121);
   text-align: center;
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+  }
 }
