@@ -2,7 +2,9 @@
 .header {
   border-bottom: 1px solid #ececec;
   &__container {
+    width: 100%;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -21,7 +23,7 @@
   @media screen and (min-width: 1200px) {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: baseline;
   }
 }
 
@@ -70,7 +72,7 @@
 .js-open-menu {
   margin-left: auto;
   padding: 0;
-  border-bottom: none;
+  border: none;
   transition: color var(--hoover-duration) var(--hover-time-function);
   &:hover,
   &:focus {
