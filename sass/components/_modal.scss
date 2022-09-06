@@ -19,6 +19,16 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1) rotate(0);
+
+  @media screen and (min-width: 480px) {
+    width: 450px;
+    height: 609px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+    height: 581px;
+  }
 }
 .modal-close {
   position: absolute;
@@ -178,6 +188,10 @@
     .modal-check:focus + & {
       border-color: var(--accent-color);
     }
+  }
+  @media screen and (min-width: 1200px) {
+    line-height: 1.71;
+    font-size: 14px;
   }
 }
 
