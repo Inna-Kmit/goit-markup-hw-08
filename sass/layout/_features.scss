@@ -7,7 +7,7 @@
 .features__item {
   width: 100%;
 
-  @media screen and (min-width: 780px) {
+  @media screen and (min-width: 768px) {
     width: calc((100% - 30px) / 2);
   }
   @media screen and (min-width: 1200px) {
@@ -37,7 +37,7 @@
   height: 120px;
   margin-bottom: 30px;
 
-  @media screen and (min-width: 780px) {
+  @media screen and (min-width: 768px) {
     max-width: 354px;
   }
   @media screen and (min-width: 1200px) {
@@ -55,7 +55,7 @@
   color: var(--primary-text-color);
   margin-bottom: 10px;
 
-  @media screen and (min-width: 780px) {
+  @media screen and (min-width: 768px) {
     text-align: left;
   }
   @media screen and (min-width: 1200px) {

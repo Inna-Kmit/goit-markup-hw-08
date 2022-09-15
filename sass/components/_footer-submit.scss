@@ -9,12 +9,14 @@
   @media screen and (min-width: 1200px) {
     margin-top: 0;
     display: block;
-    margin-left: 83px;
+    margin-left: 84px;
   }
 }
 
 .form-wrap {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   @media screen and (min-width: 1200px) {
     display: flex;
   }
@@ -33,6 +35,7 @@
   margin-top: 20px;
 }
 .footer-input {
+  margin-bottom: 20px;
   display: block;
   width: 358px;
   height: 50px;
@@ -61,6 +64,7 @@
   }
   @media screen and (min-width: 1200px) {
     width: 358px;
+     &:focus {border: 1px solid;
   }
 }
 

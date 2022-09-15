@@ -1,19 +1,20 @@
 /*---------header------------*/
 .header {
   border-bottom: 1px solid #ececec;
-  &__container {
+  &.__container {
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
     align-items: center;
     padding-top: 10px;
     padding-bottom: 10px;
 
     @media screen and (min-width: 1200px) {
-      lign-items: baseline;
+      align-items: baseline;
     }
   }
 }
+
 .navigation {
   display: none;
 
@@ -73,7 +74,7 @@
   margin-left: auto;
   padding: 0;
   border: none;
-  transition: color var(--hoover-duration) var(--hover-time-function);
+  transition: color var(--time) var(--time-function);
   &:hover,
   &:focus {
     color: var(--accent-color);
@@ -99,7 +100,7 @@
     flex-direction: column;
     justify-content: space-between;
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (man-width: 768px) {
     display: none;
   }
   transform: translateX(100%);
@@ -114,6 +115,7 @@
   display: block;
   margin-bottom: 8px;
   padding: 0;
+
   transition: color var(--time) var(--time-function);
 
   &:hover,

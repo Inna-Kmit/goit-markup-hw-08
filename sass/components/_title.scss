@@ -6,7 +6,9 @@
   /*letter-spacing: 0.03em;*/
   color: var(#212121);
   text-align: center;
+
   @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
     font-size: 36px;
   }
 }
