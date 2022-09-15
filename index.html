@@ -181,32 +181,32 @@
           <h2 class="section__title">Чим ми займаємося</h2>
           <ul class="works list">
             <li class="works__item">
-              <img
-                class="works__img"
-                src="./images/box1.jpg"
-                alt="Створенням веб сайту"
-                width="370"
-                height="294"
+              <img srcset=
+              "./images/img1.jpg 1x, 
+              ./images/img1-2x.jpg 2x" 
+              src="./images/img1.jpg"
+              class="works__img"
+              alt="Створенням веб сайту"
               />
               <p class="works__text">Десктопні додатки</p>
             </li>
             <li class="works__item">
-              <img
+              <img srcset="
+                        ./images/img2.jpg 1x,
+                        ./images/img2-2x.jpg 2x"
+                        src="./images/img2.jpg"
                 class="works__img"
-                src="./images/box2.jpg"
                 alt="Адаптивна верстка"
-                width="370"
-                height="294"
               />
               <p class="works__text">Мобільні додатки</p>
             </li>
             <li class="works__item">
-              <img
+              <img srcset="
+                        ./images/img3.jpg 1x,
+                        ./images/img3-2x.jpg 2x"
+                        src="./images/img3.jpg"
                 class="works__img"
-                src="./images/box3.jpg"
                 alt="Дизайном Вашої ідеї"
-                width="370"
-                height="294"
               />
               <p class="works__text">Дизайнерські рішення</p>
             </li>
@@ -219,7 +219,7 @@
           <h2 class="section__title title">Наша команда</h2>
           <ul class="team list">
             <li class="team__item">
-                <!-- <picture>
+             <picture>
                 <source srcset="./images/team-card-1-270.jpg 1x, ./images/team-card-1-540.jpg 2x"
                 media="(min-width: 1200px)" type="image/jpeg">
                 <source srcset="./images/team-card-1-354.jpg 1x, ./images/team-card-1-708.jpg 2x" media="(min-width: 768px)"
@@ -227,14 +227,7 @@
               <source srcset="./images/team-card-1-450.jpg 1x, ./images/team-card-1-900.jpg 2x" media="(max-width: 767px)"
                 type="image/jpeg">
                 <img src="./images/team-card-1-450.jpg" alt="Чоловік в окулярах" class="team__img">
-                </picture> -->
-              <img
-                class="team__img"
-                src="./images/photo1.jpg"
-                alt="фото Ігоря"
-                width="270"
-                height="260"
-              />
+                </picture>
               <div class="team__card">
                 <h3 class="team__title">Ігор Демяненко</h3>
                 <p class="team__text">Product Designer</p>
@@ -271,13 +264,15 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                class="team__img"
-                src="./images/photo2.jpg"
-                alt="фото Ольги"
-                width="270"
-                height="260"
-              />
+         <picture>
+                            <source srcset="./images/team-card-2-270.jpg 1x, ./images/team-card-2-540.jpg 2x"
+                                media="(min-width: 1200px)" type="image/jpeg">
+                            <source srcset="./images/team-card-2-354.jpg 1x, ./images/team-card-2-708.jpg 2x" media="(min-width: 768px)"
+                                type="image/jpeg">
+                            <source srcset="./images/team-card-2-450.jpg 1x, ./images/team-card-2-900.jpg 2x" media="(max-width: 767px)"
+                                type="image/jpeg">
+                            <img src="./images/team-card-2-450.jpg" alt="Молода дівчина" class="team__img">
+                        </picture>
               <div class="team__card">
                 <h3 class="team__title">Ольга Репіна</h3>
                 <p class="team__text">Frontend Developer</p>
@@ -314,13 +309,15 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                class="team__img"
-                src="./images/photo3.jpg"
-                alt="фото Миколи"
-                width="270"
-                height="260"
-              />
+            <picture>
+            <source srcset="./images/team-card-3-270.jpg 1x, ./images/team-card-3-540.jpg 2x"
+            media="(min-width: 1200px)" type="image/jpeg">
+            <source srcset="./images/team-card-3-354.jpg 1x, ./images/team-card-3-708.jpg 2x" media="(min-width: 768px)"
+            type="image/jpeg">
+            <source srcset="./images/team-card-3-450.jpg 1x, ./images/team-card-3-900.jpg 2x" media="(max-width: 767px)"
+            type="image/jpeg">
+            <img src="./images/team-card-3-450.jpg" alt="хлопець усміхається" class="team__img">
+            </picture>
               <div class="team__card">
                 <h3 class="team__title">Микола Тарасов</h3>
                 <p class="team__text">Marketing</p>
@@ -357,13 +354,15 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                class="team__img"
-                src="./images/photo4.jpg"
-                alt="фото Михаїла"
-                width="270"
-                height="260"
-              />
+              <picture>
+                            <source srcset="./images/team-card-4-270.jpg 1x, ./images/team-card-4-540.jpg 2x"
+                                media="(min-width: 1200px)" type="image/jpeg">
+                            <source srcset="./images/team-card-4-354.jpg 1x, ./images/team-card-4-708.jpg 2x" media="(min-width: 768px)"
+                                type="image/jpeg">
+                            <source srcset="./images/team-card-4-450.jpg 1x, ./images/team-card-4-900.jpg 2x" media="(max-width: 767px)"
+                                type="image/jpeg">
+                            <img src="./images/team-card-4-450.jpg" alt="Молодий хлопець в окулярах з бородою" class="team__img">
+                        </picture>
               <div class="team__card">
                 <h3 class="team__title">Михаїл Єрмаков</h3>
                 <p class="team__text">UI Designer</p>
