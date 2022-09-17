@@ -9,7 +9,6 @@
 }
 .section--no-pad-top {
   padding-top: 0px;
-
   // @media not screen and (min-width: 1200px) {
   //   display: none;
 }
@@ -27,7 +26,7 @@
   color: var(--primary-text-color);
   // margin-bottom: 30px;
 
-  @media screen and (min-width: 1200px) {
-    margin-bottom: 50px;
-  }
+  // @media screen and (min-width: 1200px) {
+  //   margin-bottom: 50px;
+  // }
 }

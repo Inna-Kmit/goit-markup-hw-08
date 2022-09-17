@@ -1,3 +1,11 @@
+.our-works {
+  display: none;
+
+  @media screen and (min-width: 1200px) {
+    display: contents;
+  }
+}
+
 .works {
   display: flex;
   column-gap: 30px;

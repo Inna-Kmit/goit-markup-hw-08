@@ -64,7 +64,9 @@
   }
   @media screen and (min-width: 1200px) {
     width: 358px;
-     &:focus {border: 1px solid;
+    &:focus {
+      border: 1px solid;
+    }
   }
 }
 
