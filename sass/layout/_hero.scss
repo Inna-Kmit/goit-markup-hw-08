@@ -5,19 +5,22 @@
 .hero {
   display: flex;
   background-color: var(--footer-background);
-  // padding-top: 118px;
-  // padding-bottom: 118px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   text-align: center;
   // max-width: 1600px;
   // min-height: 600px;
   margin-left: auto;
   margin-right: auto;
-  width: 100%;
+  // width: 100%;
+  // max-width: 1600px;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url('../images/bgcstudia.jpg');
+    url('../images/Hero-img-mob.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  width: 100%;
+  max-width: 1600px;
 
   @media screen and (min-width: 768px) {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
