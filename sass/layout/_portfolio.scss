@@ -1,7 +1,7 @@
 .filter {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
   gap: 8px;
 
   @media screen and (min-width: 768px) {
@@ -26,6 +26,7 @@
 
 .portfolio-list-item {
   width: 100%;
+
   @media screen and (min-width: 768px) {
     width: calc((100% - 30px) / 2);
   }
@@ -59,6 +60,7 @@
   }
 }
 .portfolio-list-wrap {
+  flex-grow: 1;
   position: relative;
   overflow: hidden;
 }

@@ -127,15 +127,17 @@ body {
   cursor: pointer;
   padding: 10px 32px;
   min-width: 200px;
-  -webkit-transition: color var(--time) var(--time-function), backraund-color var(--time) var(--time-function) box-shadow var(--time) var(--time-function);
-  transition: color var(--time) var(--time-function), backraund-color var(--time) var(--time-function) box-shadow var(--time) var(--time-function);
+  -webkit-transition: color var(--time) var(--time-function), backraund-color var(--time) var(--time-function), -webkit-box-shadow var(--time) var(--time-function);
+  transition: color var(--time) var(--time-function), backraund-color var(--time) var(--time-function), -webkit-box-shadow var(--time) var(--time-function);
+  transition: color var(--time) var(--time-function), backraund-color var(--time) var(--time-function), box-shadow var(--time) var(--time-function);
+  transition: color var(--time) var(--time-function), backraund-color var(--time) var(--time-function), box-shadow var(--time) var(--time-function), -webkit-box-shadow var(--time) var(--time-function);
 }
 .hero__btn:hover, .hero__btn:focus {
   background-color: var(--second-accent-color);
 }
 
 /*portfolio btn*/
-.filter-buttom {
+.filter-button {
   font-size: 16px;
   line-height: 1.62;
   font-weight: 500;
@@ -156,7 +158,7 @@ body {
   transition: color var(--time) var(--time-function), background-color var(--time) var(--time-function), border var(--time) var(--time-function), box-shadow var(--time) var(--time-function);
   transition: color var(--time) var(--time-function), background-color var(--time) var(--time-function), border var(--time) var(--time-function), box-shadow var(--time) var(--time-function), -webkit-box-shadow var(--time) var(--time-function);
 }
-.filter-buttom:hover, .filter-buttom:focus {
+.filter-button:hover, .filter-button:focus {
   background: var(--accent-color);
   color: var(--background-color);
   -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -879,7 +881,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   .menu-list {
-    margin-left: 88px;
+    margin-right: 64px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1055,10 +1057,11 @@ body {
 
 .js-open-menu {
   margin-left: auto;
+  border: none;
   padding: 0;
   border-bottom: none;
-  -webkit-transition: color var(--hoover-duration) var(--hover-time-function);
-  transition: color var(--hoover-duration) var(--hover-time-function);
+  -webkit-transition: color var(--time) var(--time-function);
+  transition: color var(--time) var(--time-function);
 }
 .js-open-menu:hover, .js-open-menu:focus {
   color: var(--accent-color);
@@ -1069,8 +1072,14 @@ body {
   }
 }
 
+.mob-menu-list {
+  list-style: none;
+  text-decoration: none;
+  margin-left: 40px;
+}
+
 .menu-icon {
-  background-color: var(--header-background-color);
+  background-color: var(--background-color);
   fill: currentColor;
 }
 
@@ -1084,7 +1093,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: #ffffff;
+  background-color: var(--background-color);
   width: 100vw;
   height: 100vh;
   z-index: 1;
@@ -1118,13 +1127,14 @@ body {
 }
 
 .js-close-menu {
-  background-color: var(--header-background-color);
+  background-color: var(--background-color);
   margin-left: auto;
   display: block;
   margin-bottom: 8px;
   padding: 0;
-  -webkit-transition: color var(--hoover-duration) var(--hover-time-function);
-  transition: color var(--hoover-duration) var(--hover-time-function);
+  -webkit-transition: color var(--time) var(--time-function);
+  transition: color var(--time) var(--time-function);
+  border: none;
 }
 .js-close-menu:hover, .js-close-menu:focus {
   color: var(--accent-color);
@@ -1139,45 +1149,53 @@ body {
 }
 
 .mob-menu__link {
-  font-weight: 500;
-  font-size: 40px;
+  font-size: 40pxpx;
   line-height: 1.18;
+  font-weight: 500;
   letter-spacing: 0.02em;
-  color: #212121;
+  color: var(--primary-text-color);
+  text-decoration: none;
 }
 
 .current {
   color: var(--accent-color);
 }
 
+.mob-contact {
+  list-style: none;
+  text-decoration: none;
+  margin-bottom: 64px;
+}
+
 .mob-contact__item:not(:last-child) {
   margin-bottom: 32px;
 }
 
-.mob-contact {
-  margin-bottom: 64px;
-}
-
 .mob-tel__link {
-  font-weight: 500;
-  font-size: 34px;
+  font-size: 34pxpx;
   line-height: 1.18;
+  font-weight: 500;
   letter-spacing: 0.02em;
-  color: #2196f3;
+  color: var(--accent-color);
+  text-decoration: none;
 }
 
 .mob-mail__link {
-  font-weight: 500;
-  font-size: 24px;
+  font-size: 24pxpx;
   line-height: 1.17;
+  font-weight: 500;
   letter-spacing: 0.02em;
-  color: #757575;
+  color: var(--second-text-color);
+  text-decoration: none;
 }
 
 .mob-social {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 64px;
 }
 
 .mob-social__item:not(:last-child) {
@@ -1186,11 +1204,12 @@ body {
 }
 
 .mob-social__link {
+  text-decoration: none;
   font-weight: 500;
   font-size: 18px;
   line-height: 1.22;
   letter-spacing: 0.02em;
-  color: #2196f3;
+  color: var(--accent-color);
   padding-right: 10px;
   padding-bottom: 0;
 }
@@ -1673,10 +1692,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: 50px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 25px;
   gap: 8px;
 }
 @media screen and (min-width: 768px) {
@@ -1750,6 +1768,9 @@ body {
 }
 
 .portfolio-list-wrap {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   position: relative;
   overflow: hidden;
 }

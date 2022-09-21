@@ -17,41 +17,92 @@ content="width=device-width, initial-scale=1.0"/>
 <!--шапка-->
   <body>
   <header class="header">
-  <div class="container header__container">
-  <a lang="en" class="logo link" href="./index.html">
-	<span class="logo__name">Web</span>Studio</a>
- <nav class="navigation">
-<ul class="navigation__list list">
-<li class="navigation__item">
-<a class="navigation__link link" href="./index.html">Студія</a>
-</li>
-<li class="navigation__item">
-<a class="navigation__link link navigation__link--current" href="./portfolio.html">Портфоліо</a>
-</li>
-<li class="navigation__item">
-    <a class="navigation__link link" href="/">Контакти</a>
-    </li>
-    </ul>
-    </nav>
-	<ul class="contacts contacts__header list">
-    <li class="contacts__item">
-    <a class="contacts__link link" href="mailto:info@devstudio.com">
-    <svg class="contacts__icon" width="16" height="12">
-    <use href="./images/icons.svg#icon-envelope"></use>
-    </svg>
-              info@devstudio.com
-            </a>
-          </li>
-          <li class="contacts__item">
-            <a class="contacts__link link" href="tel:+380961111111">
-              <svg class="contacts__icon" width="10" height="16">
-                <use href="./images/icons.svg#icon-smartphone"></use>
-              </svg>
-              +380961111111
-            </a>
-          </li>
-        </ul>
-      </div>
+        <div class="container header__container">
+          <a lang="en" class="logo link" href="./index.html">
+        <span class="logo__name">Web</span>Studio</a>
+            <button type="button" class="js-open-menu" aria-expanded="false" aria-controls="mobile-menu" style="background-color: white;">
+                <svg class="menu-icon" width="40" height="40">
+                    <use href="./images/icons.svg#icon-menu_40px"></use>
+                </svg>
+            </button>
+            <nav class="navigation header__navigation">
+                <ul class="menu-list">
+                    <li class="menu-list__item">
+                        <a href="./index.html" class="menu-list__link menu-list__link--current">Студія</a>
+                    </li>
+                    <li class="menu-list__item">
+                        <a href="./portfolio.html" class="menu-list__link">Портфоліо</a>
+                    </li>
+                    <li class="menu-list__item">
+                        <a href="" class="menu-list__link">Контакти</a>
+                    </li>
+                </ul>
+            </nav>
+            <ul class="connect">
+                <li class="connect__item">
+                    <a href="mailto:info@devstudio.com" class="connect__link">
+                        <svg class="connect__icon" width="16" height="12">
+                            <use href="./images/icons.svg#icon-envelope"></use>
+                        </svg>
+                    info@devstudio.com</a>
+                </li>
+                <li class="connect__item">
+                    <a href="tel:+380961111111" class="connect__link">
+                        <svg class="connect__icon" width="10" height="16">
+                            <use href="./images/icons.svg#icon-smartphone"></use>
+                            </svg>
+                    +38 096 111 11 11</a>
+                </li>
+            </ul>
+        </div>
+        <div class="js-menu-container" id="mobile-menu">
+            <div class="container">
+                <div class="mob-menu-top">
+                    <button type="button" class="js-close-menu">
+                        <svg class="icon-close__icon" width="40" height="40">
+                            <use href="./images/icons.svg#icon-close-black"></use>
+                        </svg>
+                    </button>
+                    <ul class="mob-menu-list list">
+                        <li class="mob-menu__item">
+                            <a href="" class="mob-menu__link current">Студія</a>
+                        </li>
+                        <li class="mob-menu__item">
+                            <a href="./portfolio.html" class="mob-menu__link">Портфоліо</a>
+                        </li>
+                        <li class="mob-menu__item">
+                            <a href="" class="mob-menu__link">Контакти</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mob-menu-bottom">
+                    <ul class="mob-contact">
+                        <li class="mob-contact__item">
+                            <a href="tel:+380961111111" class="mob-tel__link">
+                                +38 096 111 11 11</a>
+                        </li>
+                        <li class="mob-contact__item">
+                            <a href="mailto:info@devstudio.com" class="mob-mail__link">
+                                info@devstudio.com</a>
+                        </li>
+                    </ul>
+                    <ul class="mob-social list">
+                        <li class="mob-social__item">
+                            <a href="" target="_blank" rel="noopener noreferrer nofollow" class="mob-social__link">Instagram</a>
+                        </li>
+                        <li class="mob-social__item">
+                            <a href="" target="_blank" rel="noopener noreferrer nofollow" class="mob-social__link">Twitter</a>
+                        </li>
+                        <li class="mob-social__item">
+                            <a href="" target="_blank" rel="noopener noreferrer nofollow" class="mob-social__link">Facebook</a>
+                        </li>
+                        <li class="mob-social__item">
+                            <a href="" target="_blank" rel="noopener noreferrer nofollow" class="mob-social__link">LinkedIn</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </header>
 		<!--Hero-->
 		<main>     
@@ -62,7 +113,7 @@ content="width=device-width, initial-scale=1.0"/>
 						<li class="filter-item">
 							<button
 								type="button"
-								class="filter-buttom"
+								class="filter-button"
 							>
 								Всі
 							</button>
@@ -70,7 +121,7 @@ content="width=device-width, initial-scale=1.0"/>
 						<li class="filter-item">
 							<button
 								type="button"
-								class="filter-buttom"
+								class="filter-button"
 							>
 								Веб-сайти
 							</button>
@@ -78,7 +129,7 @@ content="width=device-width, initial-scale=1.0"/>
 						<li class="filter-item">
 							<button
 								type="button"
-								class="filter-buttom"
+								class="filter-button"
 							>
 								Додатки
 							</button>
@@ -86,7 +137,7 @@ content="width=device-width, initial-scale=1.0"/>
 						<li class="filter-item">
 							<button
 								type="button"
-								class="filter-buttom"
+								class="filter-button"
 							>
 								Дизайн
 							</button>
@@ -94,7 +145,7 @@ content="width=device-width, initial-scale=1.0"/>
 						<li class="filter-item">
 							<button
 								type="button"
-								class="filter-buttom"
+								class="filter-button"
 							>
 								Маркетинг
 							</button>
@@ -419,5 +470,9 @@ content="width=device-width, initial-scale=1.0"/>
         </form>
       </div>
     </footer>
+	<script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
+    <script src="./js/menu.js"></script>
 	</body>
 </html>
