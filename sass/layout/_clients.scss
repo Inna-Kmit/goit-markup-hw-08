@@ -22,6 +22,7 @@
 .clients__item {
   height: 92px;
   background-color: inherit;
+  width: calc((100% - 30px) / 2);
 
   @media screen and (min-width: 768px) {
     width: calc((100% - 60px) / 3);
@@ -43,10 +44,9 @@
   border: 1px solid #afb1b8;
   border-radius: 4px;
   fill: var(--icons-color);
-  transition: border var(--time) var(--time-function), fill var(--time) var(--time-function);
+  transition: border var(--time) var(--time-function);
   &:hover,
   &:focus {
-    fill: var(--accent-color);
     border-color: var(--accent-color);
     outline: none;
   }

@@ -26,6 +26,8 @@
   margin-left: auto;
   border: none;
   padding: 0;
+  // width: 40px;
+  // height: 40px;
   border-bottom: none;
   transition: color var(--time) var(--time-function);
   &:hover,
@@ -39,7 +41,8 @@
 .mob-menu-list {
   list-style: none;
   text-decoration: none;
-  margin-left: 40px;
+  margin-left: 42px;
+  margin-bottom: 64px;
 }
 .menu-icon {
   background-color: var(--background-color);
@@ -54,13 +57,16 @@
   width: 100vw;
   height: 100vh;
   z-index: 1;
-  padding-top: 21px;
+  padding-top: 48px;
   padding-bottom: 48px;
   .container {
+    position: relative;
     display: flex;
     height: 100%;
     flex-direction: column;
     justify-content: space-between;
+    // align-items: flex-start;
+    // overflow: auto;
   }
   @media screen and (min-width: 768px) {
     display: none;
@@ -95,13 +101,20 @@
   }
 }
 .mob-menu__link {
-  @include font(40px, 1.18, 500, 0.02em);
+  font-style: normal;
+  @include font(20px, 1.18, 400, 0.02em);
   // font-weight: 500;
   // font-size: 40px;
   // line-height: 1.18;
   // letter-spacing: 0.02em;
   color: var(--primary-text-color);
   text-decoration: none;
+  @media screen and (min-width: 430px) {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+  }
 }
 .current {
   color: var(--accent-color);
@@ -118,22 +131,30 @@
 }
 
 .mob-tel__link {
-  @include font(34px, 1.18, 500, 0.02em);
+  @include font(18px, 1.18, 500, 0.02em);
   // font-weight: 500;
   // font-size: 34px;
   // line-height: 1.18;
   // letter-spacing: 0.02em;
   color: var(--accent-color);
   text-decoration: none;
+  @media screen and (min-width: 430px) {
+    font-size: 34px;
+    line-height: 1.18;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+  }
 }
 .mob-mail__link {
-  @include font(24px, 1.17, 500, 0.02em);
-  // font-weight: 500;
-  // font-size: 24px;
-  // line-height: 1.17;
-  // letter-spacing: 0.02em;
+  @include font(18px, 1.17, 500, 0.02em);
+  // font-size: 18px;
+  //   line-height: 1.17;
   color: var(--second-text-color);
   text-decoration: none;
+  @media screen and (min-width: 430px) {
+    font-size: 24px;
+    line-height: 1.17;
+  }
 }
 .mob-social {
   display: flex;
@@ -147,12 +168,17 @@
   }
 }
 .mob-social__link {
+  list-style: none;
   text-decoration: none;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 1.22;
-  letter-spacing: 0.02em;
+  @include font(16, 1.22, 400, 0.02em);
   color: var(--accent-color);
   padding-right: 10px;
   padding-bottom: 0;
+
+  @media screen and (min-width: 430px) {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+  }
 }
