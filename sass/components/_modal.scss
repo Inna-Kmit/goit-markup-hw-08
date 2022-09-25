@@ -143,11 +143,16 @@
 
 .modal-field-check {
   margin-top: 20px;
-  margin-bottom: 30px;
+  // margin-bottom: 30px;
+  width: 100%;
+
+  @media screen and (min-width: 1200px) {
+    min-width: 440px;
+  }
 }
 
 .modal-text {
-  display: block;
+  // display: block;
   width: 100%;
   height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -155,6 +160,7 @@
   resize: none;
   padding: 12px;
   outline: transparent;
+  margin-bottom: 20px;
   transition: border-color var(--time) var(--time-function);
   &:focus {
     border-color: var(--accent-color);
@@ -179,7 +185,7 @@
 }
 
 .check-text {
-  @include font(14, 1.71, null, 0.03em);
+  @include font(12, 1.71, 400, 0.03em);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -188,6 +194,10 @@
   // line-height: 1.71;
   // letter-spacing: 0.03em;
   color: var(--second-text-color);
+  @media screen and (min-width: 1200px) {
+    line-height: 1.71;
+    font-size: 14px;
+  }
   span {
     width: 16px;
     height: 15px;
@@ -205,10 +215,6 @@
       border-color: var(--accent-color);
     }
   }
-  @media screen and (min-width: 1200px) {
-    line-height: 1.71;
-    font-size: 14px;
-  }
 }
 
 .check-icon {
@@ -219,7 +225,7 @@
 }
 
 .modal-send {
-  @include font(16, 1.88, 700, 0.06em);
+  @include font(12, 1.88, 400, 0.03em);
   // font-weight: 700;
   // font-size: 16px;
   // line-height: 1.88;
@@ -230,7 +236,6 @@
   display: flex;
   align-items: center;
   margin-top: 30px;
-  min-width: 200px;
   height: 50px;
   padding: 10px 55px;
   color: var(--background-color);
@@ -244,4 +249,7 @@
   &:focus {
     background-color: var(--second-accent-color);
   }
+}
+.agree-text {
+  display: flex;
 }

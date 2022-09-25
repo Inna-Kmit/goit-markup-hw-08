@@ -4,9 +4,9 @@
   &__container {
     display: flex;
     align-items: center;
-    @media screen and (min-width: 1200px) {
-      align-items: baseline;
-    }
+  }
+  @media screen and (min-width: 1200px) {
+    align-items: baseline;
   }
 }
 
@@ -52,19 +52,20 @@
 .js-menu-container {
   position: fixed;
   top: 0;
-  left: 0;
   background-color: var(--background-color);
   width: 100vw;
   height: 100vh;
   z-index: 1;
-  padding-top: 48px;
+  // padding-top: 48px;
   padding-bottom: 48px;
   .container {
     position: relative;
     display: flex;
     height: 100%;
     flex-direction: column;
+    align-items: flex-start;
     justify-content: space-between;
+    overflow-y: scroll;
     // align-items: flex-start;
     // overflow: auto;
   }
@@ -77,12 +78,30 @@
   transform: translateX(0);
 }
 
+// .js-close-menu {
+//   background-color: var(--background-color);
+//   margin-left: auto;
+//   display: block;
+//   margin-bottom: 8px;
+//   padding: 0;
+//   transition: color var(--time) var(--time-function);
+//   &:hover,
+//   &:focus {
+//     color: var(--accent-color);
+//   }
+//   border: none;
+// }
 .js-close-menu {
-  background-color: var(--background-color);
-  margin-left: auto;
-  display: block;
-  margin-bottom: 8px;
-  padding: 0;
+  position: absolute;
+  margin-top: 10px;
+  margin-right: 15px;
+  right: 0;
+  top: 0;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
   transition: color var(--time) var(--time-function);
   &:hover,
   &:focus {
@@ -90,7 +109,9 @@
   }
   border: none;
 }
-
+.mob-menu-top {
+  padding-top: 48px;
+}
 .menu-close__icon {
   fill: currentColor;
 }
@@ -123,6 +144,7 @@
   list-style: none;
   text-decoration: none;
   margin-bottom: 64px;
+  margin-left: 40px;
 }
 .mob-contact__item {
   &:not(:last-child) {
@@ -156,10 +178,12 @@
     line-height: 1.17;
   }
 }
+
 .mob-social {
   display: flex;
   flex-wrap: wrap;
   margin-top: 64px;
+  margin-left: 40px;
 }
 .mob-social__item {
   &:not(:last-child) {

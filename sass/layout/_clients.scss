@@ -44,9 +44,10 @@
   border: 1px solid #afb1b8;
   border-radius: 4px;
   fill: var(--icons-color);
-  transition: border var(--time) var(--time-function);
+  transition: border var(--time) var(--time-function), fill var(--time) var(--time-function);
   &:hover,
   &:focus {
+    fill: var(--accent-color);
     border-color: var(--accent-color);
     outline: none;
   }
