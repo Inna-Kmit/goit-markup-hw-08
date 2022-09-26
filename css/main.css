@@ -612,12 +612,6 @@ body {
   background-color: var(--second-accent-color);
 }
 
-.agree-text {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 /*--header and footer Logo--*/
 .logo {
   font-size: 26px;
@@ -720,6 +714,10 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -744,11 +742,26 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
 }
+@media screen and (min-width: 768px) {
+  .form-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
 @media screen and (min-width: 1200px) {
   .form-wrap {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }
 
@@ -761,9 +774,19 @@ body {
   text-align: center;
   color: var(--background-color);
 }
+@media screen and (min-width: 768px) {
+  .submit__title {
+    margin-top: 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .submit__title {
+    text-align: left;
+  }
+}
 
 .footer-form {
-  margin-top: 60px;
+  margin-top: 20px;
 }
 
 .footer-input {
@@ -870,6 +893,13 @@ body {
 }
 .footer-btn-submit:hover, .footer-btn-submit:focus {
   background-color: var(--second-accent-color);
+}
+@media screen and (min-width: 768px) {
+  .footer-btn-submit {
+    max-width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 @media screen and (min-width: 1200px) {
   .footer-btn-submit {
@@ -1074,6 +1104,7 @@ body {
 
 .js-open-menu {
   margin-left: auto;
+  line-height: 0;
   border: none;
   padding: 0;
   border-bottom: none;
@@ -1575,8 +1606,8 @@ body {
 }
 
 .clients__title {
-  font-size: 36px;
-  line-height: 1.16;
+  font-size: 28px;
+  line-height: 1.17;
   font-weight: 700;
   letter-spacing: 0.03em;
   text-align: center;

@@ -3,8 +3,10 @@
   display: block;
   // margin-left: 93px;
   margin-top: 60px;
+
   @media screen and (min-width: 768px) {
     align-items: center;
+    flex-direction: column;
     display: flex;
     margin-top: 0;
   }
@@ -18,11 +20,17 @@
 .form-wrap {
   display: flex;
   flex-wrap: wrap;
-
   justify-content: center;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: column;
+    display: flex;
+    // align-items: baseline;
+  }
 
   @media screen and (min-width: 1200px) {
     display: flex;
+    flex-direction: row;
   }
 }
 
@@ -35,9 +43,15 @@
   text-transform: uppercase;
   text-align: center;
   color: var(--background-color);
+  @media screen and (min-width: 768px) {
+    margin-top: 20px;
+  }
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }
 .footer-form {
-  margin-top: 60px;
+  margin-top: 20px;
 }
 .footer-input {
   margin-bottom: 20px;
@@ -83,6 +97,7 @@
   // letter-spacing: 0.06em;
   cursor: pointer;
   border: none;
+  // display: inline flex;
   display: inline-flex;
   align-items: center;
   justify-content: baseline;
@@ -99,6 +114,12 @@
   &:hover,
   &:focus {
     background-color: var(--second-accent-color);
+  }
+  @media screen and (min-width: 768px) {
+    max-width: 200px;
+    // align-items: center;
+    margin-left: auto;
+    margin-right: auto;
   }
   @media screen and (min-width: 1200px) {
     margin-top: 0;
